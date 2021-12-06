@@ -1,0 +1,197 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN WRAPPER  */
+main {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 1050px;
+}
+
+
+/* HEADER */
+header {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.header__title {
+    color: white;
+}
+
+.header__title > span {
+    color: orange;
+}
+
+.header__login-btn,
+.header__join-btn {
+    font-weight: bold;
+    height: 25px;
+    width: 85px;
+}
+
+.header__join-btn {
+    background-color: orange;
+    margin-right: 15px;
+}
+
+.header__login-btn {
+    background-color: royalblue;
+    color: white;
+}
+
+.header__login-btn:hover,
+.header__join-btn:hover {
+    cursor: pointer;
+    transform: translate(1px, 1px);
+}
+
+
+/* SEARCH SECTION */
+.search {
+    align-items: center;
+    background-color: sandybrown;
+    display: flex;
+    justify-content: space-evenly;
+    height: 175px;
+    padding: 20px;
+}
+
+/* Display flex here eliminates white-space
+   between search text and go btn */
+.search__input {
+    display: flex;
+}
+
+.search__text {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 30px;
+    padding-left: 5px;
+    width: 275px;
+}
+
+.search__btn {
+    background-color: royalblue;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+}
+
+.search__btn:hover {
+    cursor: pointer;
+    transform: translate(0.5px, 0.5px);
+}
+
+.search__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.search__icon {
+    background-color: white;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100px;
+}
+
+.search__icon:hover {
+    cursor: pointer;
+}
+.search__label {
+    font-weight: bold;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+    display: flex;
+    margin-top: 15px;
+}
+
+.main-content__col-left {
+    flex: 3;
+    margin-right: 30px;
+}
+
+.main-content__col-right {
+    flex: 2;
+}
+
+
+/* RECIPE OF THE DAY */
+.rotd {
+    align-items: center;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.rotd__link {
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+.rotd__full-recipe {
+    margin-top: 20px;
+    display: none;
+}
+
+
+/* RECOMMENDED RECIPES */
+.recommended-title {
+    border-bottom: 3px solid lightgray;
+    padding-bottom: 15px;
+}
+
+/* RECIPE CARD */
+.recipe-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.recipe-card__pic {
+    width: 100%;
+}
+
+.recipe-card__footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.recipe-card__likes {
+    align-items: center;
+    display: flex;
+}
+
+.recipe-card__heart {
+    margin-right: 5px;
+    width: 25px;
+}
+
+.recipe-card__heart:hover {
+    cursor: pointer;
+    transform: translate(1px, 1px);
+}
+
+.recipe-card__num-likes {
+    display: inline-block;
+}
